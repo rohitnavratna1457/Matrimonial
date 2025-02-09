@@ -30,7 +30,7 @@ class user(AbstractBaseUser):
     REQUIRED_FIELDS = ['name', 'mobile_no', ]  # Fields that need to be filled in when creating a user
 
     def __str__(self):
-        return self.email
+        return self.name
 
     def has_perm(self, perm, obj=None):
         return self.is_admin or self.is_superuser
