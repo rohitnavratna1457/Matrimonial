@@ -26,6 +26,10 @@ SECRET_KEY = 'django-insecure-#k(&j4tp2044r!&u*bfa+4gh=x@vcovdw&%+4fhw_f33k0q&1w
 DEBUG = True
 
 ALLOWED_HOSTS = []
+# settings.py
+
+# Define the custom user model
+AUTH_USER_MODEL = 'account.user'  # Replace 'yourapp' with the name of your app
 
 
 # Application definition
@@ -37,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'account',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +126,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://localhost:3001",
+    "http://127.0.0.1:3001",
+    "http://localhost:3002",
+    "http://127.0.0.1:3002",
+]

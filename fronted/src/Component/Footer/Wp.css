@@ -1,0 +1,67 @@
+/* Ensure the container has a proper position for floating button */
+.whatsapp-container {
+  position: fixed; /* Fixed position to make it always visible on the screen */
+  bottom: 20px; /* Adjust the bottom distance */
+  left: 20px; /* Adjust the right distance */
+  z-index: 1000; /* Ensures the button is always on top */
+}
+
+/* Styling for the WhatsApp button */
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366; /* WhatsApp green color */
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Smooth transition effect for hover */
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1); /* Enlarges the button when hovered */
+}
+
+/* WhatsApp icon styling */
+.whatsapp-icon {
+  width: 40px; /* Adjust the size of the WhatsApp icon */
+  height: 40px;
+  object-fit: cover; /* Ensures the image covers the space properly */
+}
+
+/* Notification icon styling */
+.notification-icon {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 12px;
+  height: 12px;
+  /* background-color: red; Red color for the notification icon */
+  border-radius: 50%;
+  border: 2px solid white; /* To create a border around the notification icon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  color: white; /* White text for notification count */
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Optional: You can add a media query for responsiveness */
+@media (max-width: 768px) {
+  .whatsapp-container {
+    bottom: 10px; /* Adjust the bottom distance for smaller screens */
+    right: 10px; /* Adjust the right distance for smaller screens */
+  }
+
+  .whatsapp-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .notification-icon {
+    width: 10px;
+    height: 10px;
+  }
+}

@@ -1,0 +1,82 @@
+/* Container for the search input, dropdown, and button */
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adds more space between elements */
+    padding: 20px;
+    /* flex-wrap: wrap; */
+    background-color: #f8f8f8; /* Light background color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* Optional: Limit container width */
+    margin: 0 auto; /* Center container horizontally */
+  }
+  
+  /* Styling for the dropdowns */
+  .search-dropdown {
+    padding: 15px;
+    font-size: 18px; /* Increased font size */
+    border: 1px solid #ccc; /* Border for the dropdown */
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    width: 130px; /* Increased width for larger dropdowns */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+  }
+  
+  /* Styling for the input field */
+  .search-input {
+    width: 250px;
+    padding: 15px;
+    font-size: 18px; /* Increased font size */
+    border: 1px solid #ccc; /* Border for the input field */
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+  }
+  
+  /* Add focus effect for the input */
+  .search-input:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+  }
+  
+  /* Button Styling */
+  .search-button {
+    padding: 15px 25px;
+    font-size: 18px; /* Increased font size */
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50; /* Border for the button */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 180px; /* Increased width for the button */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+  }
+  
+  /* Button hover effect */
+  .search-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+  }
+  
+  /* Label Styling for Age Range "To" */
+  label {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 5px; /* Small gap between label and dropdown */
+  }
+  
+  /* General styling for label elements */
+  label, .search-dropdown {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
